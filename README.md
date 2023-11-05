@@ -34,6 +34,16 @@ Nexus API
 3. files in maven snapshots will be shown with curl -u user:pwd -X GET 'http://"dropletIPv4":8081/service/rest/v1/componets?respository=maven-snapshots'
 ---------------------------------------------
 Blob Store
+1. created blobstore with type=file path=blobs/mystore
+
+---------------------------------------------
+Cleanup policies and scheduled tasks
+1. created cleanup policie: name=maven format=maven2 asset_name_matcher=".*"
+2. assinged cleanup policie to repo maven-snapshots
+3. checked if tasks for cleanup got created
+4. created admin blob compact task to run daily at 06:00 CET
+5. started cleanup manually. no more files in repo found
+6. started compact-store task to cleanup default blob store, files got deleted from disk
 
 
 
