@@ -45,7 +45,7 @@ Cleanup policies and scheduled tasks
 5. started cleanup manually. no more files in repo found
 6. started compact-store task to cleanup default blob store, files got deleted from disk
 
-
+--------------------------------------------------
 
 
 Reference: DevOps Bootcamp and TWN
